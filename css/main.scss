@@ -1,0 +1,39 @@
+---
+# Main Styles
+---
+
+@charset "utf-8";
+
+/// Variables
+
+// Typography
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$base-line-height: 1.6;
+
+$font-size-1:      40px;
+$font-size-2:      32px;
+$font-size-3:      24px;
+$font-size-4:      22px;
+
+// Colors
+$black:                 #000;
+$white:                 #FFF;
+$text-color:            #333;
+$background-color:      $white;
+$brand-color:           #2a7ae2;
+$grey-color:            #828282;
+$grey-color-light:      lighten($grey-color, 40%);
+$grey-color-dark:       darken($grey-color, 25%);
+
+// Layout
+$grid-gutter:      30px;
+$site-max-width:   960px;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "reset",
+  "base"
+;

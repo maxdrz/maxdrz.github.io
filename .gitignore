@@ -1,3 +1,8 @@
-_site/
-.sass-cache/
+# System files
+.DS_Store
+
+# Generated Code from Jekyll
+_site
+.scssc
+.sass-cache
 .jekyll-metadata
