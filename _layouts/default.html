@@ -16,21 +16,24 @@
   <body>
     <header class="site-header">
       <div class="wrapper">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-        <nav class="site-nav">
-          <ul>
-            {% for page in site.pages %}
-              {% if page.title %}
-              <li>
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-                  {{ page.title }}
-                </a>
-              </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
+        <div classs="row">
+          <div class="sml-c12 med-c4">
+            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+          </div> <!-- .c -->
+          <nav class="site-nav sml-c12 med-c8">
+            <ul>
+              {% for page in site.pages %}
+                {% if page.title %}
+                <li>
+                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+                    {{ page.title }}
+                  </a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+        </div> <!-- .row -->
       </div> <!-- .wrapper -->
     </header>
 
@@ -40,7 +43,9 @@
 
     <footer class="site-footer">
       <div class="wrapper">
-        &copy;{{ site.time | date: '%Y' }}, {{ site.title }}
+        <div class="sml-c12">
+          &copy;{{ site.time | date: '%Y' }}, {{ site.title }}
+        </div> <!-- .c -->
       </div> <!-- .wrapper -->
     </footer>
   </body>

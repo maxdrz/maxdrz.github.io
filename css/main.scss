@@ -31,6 +31,45 @@ $grey-color-dark:       darken($grey-color, 25%);
 $grid-gutter:      30px;
 $site-max-width:   960px;
 
+/// Media Query Mixins
+$fix-mqs: false !default;
+
+@mixin respond-to($content) {
+  @if $fix-mqs {
+    @if $content == med {
+      $content: 770px;
+    } @else if $content == sml {
+      $content: 401px;
+    }
+    @if $fix-mqs >= $content {
+      @content;
+    }
+  }
+  @else {
+    @if $content == site-width {
+      @media only screen and (min-width: $site-max-width) { @content; }
+    } @else if $content == med {
+      @media only screen and (min-width: 770px) { @content; }
+    } @else if $content == sml {
+      @media only screen and (min-width: 401px) { @content; }
+    } @else {
+      @media only screen and (min-width: $content) { @content; }
+    }
+  }
+}
+
+@mixin respond-to-max($content) {
+  @if $content == site-width {
+    @media only screen and (max-width: 959px) { @content; }
+  } @else if $content == med {
+    @media only screen and (max-width: 769px) { @content; }
+  } @else if $content == sml {
+    @media only screen and (max-width: 400px) { @content; }
+  } @else {
+    @media only screen and (max-width: $content) { @content; }
+  }
+}
+
 /// Vendor Prefixed Mixins
 
 // Transition
@@ -46,5 +85,6 @@ $site-max-width:   960px;
 @import
   "reset",
   "base",
+  "grid",
   "typography"
 ;
