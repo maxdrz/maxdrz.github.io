@@ -1,0 +1,10 @@
+/// Sections
+.section {
+  padding-top:    $grid-gutter;
+  padding-bottom: $grid-gutter;
+}
+
+// Section > Light
+.section.light {
+  background: $white;
+}
