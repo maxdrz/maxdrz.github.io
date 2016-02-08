@@ -4,22 +4,55 @@ layout: default
 
 <div class="section">
   <div class="wrapper">
-    <div class="sml-c12">
-      <h1>Homepage</h1>
+    <div class="row">
+      <div class="sml-c12 med-c8">
+        <h1>Homepage</h1>
+        <p class="push-top">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          volutpat, elit ac facilisis faucibus, sapien dolor ornare dolor, ut
+          gravida orci urna quis lacus. Vivamus nec nunc erat. Ut massa turpis,
+          tempus eu lacus eu, interdum tincidunt turpis. Nullam nec accumsan
+          velit. Etiam eget odio dui. Sed laoreet leo non mauris dictum, ac
+          vulputate lorem convallis.
+        </p>
+      </div> <!-- .c -->
+      <div class="sml-c12 med-c4 push-top med-no-push">
+        <img src="http://placehold.it/300x300/333/ccc" alt="TODO" />
+      </div> <!-- .c -->
+    </div> <!-- .row -->
+  </div> <!-- .wrapper -->
+</div> <!-- .section -->
 
-      <h2>Posts</h2>
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
+<div class="section dark">
+  <div class="wrapper">
+    <div class="sml-c12 text-center">
+      <h1>My Work</h1>
+      <p class="push-top">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        volutpat, elit ac facilisis faucibus, sapien dolor ornare dolor, ut
+        gravida orci urna quis lacus. Vivamus nec nunc erat. Ut massa turpis,
+        tempus eu lacus eu, interdum tincidunt turpis. Nullam nec accumsan
+        velit. Etiam eget odio dui. Sed laoreet leo non mauris dictum, ac
+        vulputate lorem convallis.
+      </p>
     </div> <!-- .c -->
+
+    <div class="sml-c12 push-top">
+      <img src="http://placehold.it/960x250/ccc/333" alt="TODO" />
+    </div> <!-- .c -->
+
+    <div class="row">
+      <div class="sml-c12 med-c6">
+        <img src="http://placehold.it/500x500/ccc/333" alt="TODO" class="push-top" />
+        <img src="http://placehold.it/500x200/ccc/333" alt="TODO" class="push-top" />
+        <img src="http://placehold.it/500x300/ccc/333" alt="TODO" class="push-top" />
+      </div> <!-- .c -->
+      <div class="sml-c12 med-c6">
+        <img src="http://placehold.it/500x400/ccc/333" alt="TODO" class="push-top" />
+        <img src="http://placehold.it/500x500/ccc/333" alt="TODO" class="push-top" />
+        <img src="http://placehold.it/500x250/ccc/333" alt="TODO" class="push-top" />
+      </div> <!-- .c -->
+    </div> <!-- .row -->
   </div> <!-- .wrapper -->
 </div> <!-- .section -->
 

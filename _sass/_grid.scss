@@ -20,8 +20,8 @@
   .med-c#{$i},
   .lrg-c#{$i} {
     position: relative;
-    padding-left:  $grid-gutter;
-    padding-right: $grid-gutter;
+    padding-left:  $grid-gutter/2;
+    padding-right: $grid-gutter/2;
     min-height: 1px;
   }
 }
@@ -116,4 +116,14 @@
 }
 .push-top-double {
   margin-top: $grid-gutter*2;
+}
+.med-no-push {
+  @include respond-to(med) {
+    margin-top: 0;
+  }
+}
+.lrg-no-push {
+  @include respond-to(site-width) {
+    margin-top: 0;
+  }
 }
