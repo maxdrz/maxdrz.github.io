@@ -115,7 +115,16 @@
   margin-top: $grid-gutter;
 }
 .push-top-double {
-  margin-top: $grid-gutter*2;
+  margin-top: $grid-gutter*1.5;
+
+  @include respond-to(med) {
+    margin-top: $grid-gutter*2;
+  }
+}
+.med-push {
+  @include respond-to(med) {
+    margin-top: $grid-gutter;
+  }
 }
 .med-no-push {
   @include respond-to(med) {
