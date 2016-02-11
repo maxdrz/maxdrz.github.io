@@ -1,6 +1,33 @@
 /// Header
 
 .site-header {
-  padding-top:    $grid-gutter/2;
-  padding-bottom: $grid-gutter/2;
+  padding-top: $grid-gutter;
+}
+
+// Navigation
+.site-nav ul {
+  margin-top: $grid-gutter;
+  text-align: center;
+
+  @include respond-to(med) {
+    float: right;
+    margin-top: 0;
+  }
+}
+.site-nav ul li {
+  display: inline-block;
+
+  @include respond-to(med) {
+    float: left;
+  }
+}
+.site-nav ul li a {
+  display: inline-block;
+  padding:  $grid-gutter/4 $grid-gutter/2;
+  margin-left: $grid-gutter/2;
+  background: $white;
+}
+.site-nav ul li a:hover,
+.site-nav ul li a:focus {
+  background: transparentize($white, 0.2);
 }

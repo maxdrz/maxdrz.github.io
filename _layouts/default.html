@@ -18,19 +18,14 @@
       <div class="wrapper">
         <div class="row">
           <div class="sml-c12 med-c4">
-            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <a class="site-title" href="{{ site.baseurl }}/">
+              <img src="/assets/images/maxdrz.svg" alt="Max Drz Logo" />
+            </a>
           </div> <!-- .c -->
           <nav class="site-nav sml-c12 med-c8">
             <ul>
-              {% for page in site.pages %}
-                {% if page.title %}
-                <li>
-                  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-                    {{ page.title }}
-                  </a>
-                </li>
-                {% endif %}
-              {% endfor %}
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
             </ul>
           </nav>
         </div> <!-- .row -->

@@ -4,5 +4,6 @@ body {
   height: 100%;
 }
 body {
-  background-color: $background-color;
+  background: $background-color url('/assets/images/hero-bg.jpg') top center no-repeat;
+  background-size: cover;
 }
