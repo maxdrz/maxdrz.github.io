@@ -1,7 +1,7 @@
 /// Sections
 .section {
-  padding-top:    $grid-gutter*2;
-  padding-bottom: $grid-gutter*2;
+  padding-top:    $grid-gutter*3;
+  padding-bottom: $grid-gutter*3;
 }
 
 // Section > Light
@@ -11,6 +11,6 @@
 
 // Section > Dark
 .section.dark {
-  background: $grey-color-dark;
+  background: $text-color;
   color: $white;
 }
