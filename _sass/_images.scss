@@ -6,3 +6,18 @@ img {
   margin-left:  auto;
   margin-right: auto;
 }
+
+.img-shield {
+  @include respond-to-max(med) {
+    max-width: 150px;
+  }
+}
+
+.img-met-three-page {
+  width: 100%;
+  max-width: 1296px;
+}
+.img-met-page {
+  width: 100%;
+  max-width: 1128px;
+}

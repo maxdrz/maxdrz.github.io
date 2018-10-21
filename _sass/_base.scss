@@ -5,5 +5,8 @@ body {
 }
 body {
   background: $background-color url('/assets/images/hero-bg.jpg') top center no-repeat;
-  background-size: cover;
+
+  @include respond-to(site-width) {
+    background-size: 100% auto;
+  }
 }

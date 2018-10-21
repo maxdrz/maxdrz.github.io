@@ -14,8 +14,20 @@
   background: $white;
 }
 
+// Section > Grey Light
+.section.grey-light {
+  background: $grey-light-color;
+}
+
 // Section > Dark
 .section.dark {
   background: $text-color;
   color: $white;
+}
+
+// Section > With Shadow
+.section.with-shadow {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 50px transparentize($black, 0.8);
 }
