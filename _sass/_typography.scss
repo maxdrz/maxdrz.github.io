@@ -61,13 +61,14 @@ p:last-of-type {
 
 // Typography > Modifiers
 strong {
-  font-weight: bold;
+  font-weight: $bold-font-weight;
 }
 em {
   font-style: italic;
 }
 .meta {
   color: $grey-color;
+  font-size: $font-size-6;
 }
 .text-center {
   text-align: center;
