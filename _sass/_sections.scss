@@ -25,6 +25,11 @@
   color: $white;
 }
 
+// Section > Cream Gradient
+.section.cream-gradient {
+  background: linear-gradient($cream-color, $white);
+}
+
 // Section > With Shadow
 .with-shadow {
   position: relative;

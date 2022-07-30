@@ -7,6 +7,14 @@ img {
   margin-right: auto;
 }
 
+img.full-width {
+  width: 100%;
+}
+
+.img-shadow {
+  box-shadow: 0 0 30px transparentize($black, 0.8);
+}
+
 .img-shield {
   @include respond-to-max(med) {
     max-width: 150px;
