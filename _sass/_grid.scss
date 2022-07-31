@@ -10,7 +10,6 @@
   width: 100%;
   overflow: hidden;
 }
-.wrapper.overflow-visible,
 .row.overflow-visible {
   overflow: visible;
 }
@@ -161,4 +160,7 @@
   @include respond-to(site-width) {
     margin-top: 0;
   }
+}
+.sml-pad-bottom {
+  padding-bottom: $grid-gutter/2;
 }
