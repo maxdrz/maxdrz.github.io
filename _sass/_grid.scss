@@ -63,7 +63,7 @@
       width: 8.3333333333% * $i;
     }
   }
-  @for $i from 1 through 11 {
+  @for $i from 0 through 11 {
     .med-s#{$i} {
       margin-left: 8.3333333333% * $i;
     }
